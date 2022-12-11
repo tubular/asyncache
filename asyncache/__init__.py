@@ -5,7 +5,7 @@ asyncio.
 import asyncio
 import functools
 from contextlib import AbstractContextManager
-from typing import Any, Callable, MutableMapping, Optional, Protocol, TypeVar
+from typing import Any, Callable, MutableMapping, Optional, TypeVar
 
 from cachetools import keys
 
@@ -16,7 +16,7 @@ _KT = TypeVar("_KT")
 _T = TypeVar("_T")
 
 
-class IdentityFunction(Protocol):  # pylint: disable=too-few-public-methods
+class IdentityFunction:  # pylint: disable=too-few-public-methods
     """
     Type for a function returning the same type as the one it received.
     """

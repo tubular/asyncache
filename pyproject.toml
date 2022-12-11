@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "asyncache"
-version = "0.3.1"
+version = "0.1.1.dev0"
 description = "Helpers to use cachetools with async code."
 authors = ["hephex <figus.federico@gmail.com>"]
 license = "MIT"
 readme = "README.rst"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 cachetools = "^5.2.0"
 
 [tool.poetry.group.dev.dependencies]
